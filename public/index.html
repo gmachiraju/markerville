@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MarkerVille</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/result.js" defer></script>
+    <script src="js/about.js" defer></script>
+    <script src="js/forum.js" defer></script>
+    <script src="js/database.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/fetchData.js" defer></script>
+    <script src="js/fetchForum.js" defer></script>
+
+
+  </head>
+  <body>
+      <div class = "navBar">
+          <div class = "button" id = "databaseButton" > Biomarker Search  </div>
+          <div class = "button" id = "forumButton">  Forum </div>
+          <div class = "button" id = "aboutButton"> About  </div>
+      </div>
+
+      <div id =  "forum" class="inactive">
+
+
+      <div id = "forum-table-cont">
+        <div id = "message-post-cont">
+          <!-- onsubmit="return false" -->
+        <form id="forumForm">
+        <input type = "text" id = "message-post"  placeholder="Question here"onblur="this.placeholder='Question here'" onfocus="this.placeholder = ''"> </input>
+
+      </form>
+      </div>
+        <table>
+          <tr>
+           <th> Questions
+           <th> Answers
+          </tr>
+        </table>
+        </div>
+
+
+      </div>
+      <div id =  "aboutPage" class="inactive">
+        <p> MarkerVille is a website that displays information about biomarkers.
+        Allows users to search and edit existing information, while adding new entries of their own.
+        We aim to create a community around biomarkers in the clinical research world and beyond.
+        Developed by Mallick Lab at the Stanford Canary Center for Cancer Early Detection.
+        Built with Node.js, Express, and MySQL. Thanks for viewing! More coming soon!" </p>
+        <div id = "aboutPic">
+        <img id = "gautam" src = "images/gautum.jpg"></img>
+      </div>
+          <div class = "logo-cont">
+        <img class = "logo" src = "images/logo.png"> </img>
+      </div>
+      </div>
+      <div id = "result" class="inactive">
+          <div id = "result-table-cont">
+         <table>
+           <tr>
+            <th> Biomarker Type
+            <th> Cancer Type
+            <th> Associated Drug
+            <th> Medium
+           </tr>
+         </table>
+       </div>
+      </div>
+
+      <div id = "database">
+
+          <p> Welcome to MarkerVille! <br>Search by biomarker, drug, or cancer type: </p>
+          <div>
+            <!-- onsubmit="return false" -->
+
+          <form id="searchForm">
+            <input type= "text" id="word-input" placeholder="Enter search here"onblur="this.placeholder='Enter search here'" onfocus="this.placeholder = ''"/>
+          </form>
+          </div>
+          <div class = "logo-cont">
+            <img class="logo" src = "images/logo.png"> </img>
+          </div>
+    </div>
+
+  </body>
+</html>
