@@ -1,7 +1,8 @@
-# HW5: Sheetsu Clone
+# Markerville
+An ongoing project by Mallick Lab at Stanford's Canary Center for Cancer Early Detection. Partnered with the Snorkel creators of Stanford's Info Lab.
 
-This is the starter code for HW5: Sheets.
+Snorkel Pipeline Collaborators: Alex Ratner, Stephen Bach
+Pipeline Development: Gautam Machiraju, Varun Tandon, Cameron Baab
+Web Development: Brandon Sugarman, Clare Lei, Richa Sehgal
 
-**Note:** You need to do some setup before the starter code will run properly.
-
-[Check out the spec](http://cs193x.stanford.edu/homework/5-sheets) for instructions.
+<!-- [Check out the spec](http://cs193x.stanford.edu/homework/5-sheets) for instructions. -->

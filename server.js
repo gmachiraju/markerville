@@ -8,9 +8,9 @@ const app = express();
 app.use(express.static('public'));
 
 
-
-const DATABASE_NAME = 'cs193x-db';
-const MONGO_URL = `mongodb://localhost:27017/${DATABASE_NAME}`;
+// const DATABASE_NAME = 'cs193x-db';
+// const MONGO_URL = `mongodb://localhost:27017/${DATABASE_NAME}`;
+const MONGO_URL = `mongodb://gmachiraju:GBMachi94@ds149268.mlab.com:49268/heroku_z3046qxk`;
 
 let db = null;
 let collection = null;
@@ -32,7 +32,7 @@ async function onLookupWord(req, res) {
    const routeParams = req.params;
    const word = routeParams.word;
 
-   const query =   { $or: [{markerName: word}, {cancerType: word}, {associatedDrug: word}, {medium: word}] };
+   const query =   { $or: [{markerName: word}, {diseaseType: word}, {biomarkerType: word}, {associatedDrug: word}, {medium: word}] };
 
    const results = await collection.find(query, function(err, cursor) {
      return cursor.toArray();
@@ -41,7 +41,8 @@ async function onLookupWord(req, res) {
    const formattedResults = results.map(function(result) {
      return {
        markerName: result.markerName,
-       cancerType: result.cancerType,
+       diseaseType: result.diseaseType,
+       biomarkerType: result.biomarkerType,
        associatedDrug: result.associatedDrug,
        medium: result.medium
      }
