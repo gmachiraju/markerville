@@ -19,7 +19,7 @@ let collectionForum = null;
 async function startServer(){
 db = await MongoClient.connect(process.env.MONGODB_URI || MONGO_URL);
 collection = db.collection('col3'); //change to "markers"
-collectionForum = db.collection('forum');
+// collectionForum = db.collection('forum');
 }
 
 startServer();
