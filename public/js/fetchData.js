@@ -25,7 +25,7 @@ async function onSearchData(event) {
       row.appendChild(bioType);
       
       let disease = document.createElement('td');
-      type.innerHTML = associated[obj].diseaseType;
+      disease.innerHTML = associated[obj].diseaseType;
       row.appendChild(disease);
 
       let drug = document.createElement('td');
