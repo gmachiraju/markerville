@@ -14,26 +14,31 @@ async function onSearchData(event) {
   if(associated.length != 0 && word.length!=0){
 
   for (let obj in associated){
-    let row = document.createElement('tr');
-    let name = document.createElement('td');
-    name.innerHTML = associated[obj].markerName;
-    row.appendChild(name);
+      let row = document.createElement('tr');
+      
+      let name = document.createElement('td');
+      name.innerHTML = associated[obj].markerName;
+      row.appendChild(name);
 
-    let type = document.createElement('td');
-    type.innerHTML = associated[obj].cancerType;
-    row.appendChild(type);
+      let bioType = document.createElement('td');
+      bioType.innerHTML = associated[obj].biomarkerType;
+      row.appendChild(bioType);
 
+      
+      let disease = document.createElement('td');
+      type.innerHTML = associated[obj].diseaseType;
+      row.appendChild(disease);
 
-    let drug = document.createElement('td');
-    drug.innerHTML = associated[obj].associatedDrug;
-    row.appendChild(drug);
+      let drug = document.createElement('td');
+      drug.innerHTML = associated[obj].associatedDrug;
+      row.appendChild(drug);
 
-    let mediumType = document.createElement('td');
-    mediumType.innerHTML = associated[obj].medium;
-    row.appendChild(mediumType);
+      let mediumType = document.createElement('td');
+      mediumType.innerHTML = associated[obj].medium;
+      row.appendChild(mediumType);
 
-    table.appendChild(row);
-    }
+      table.appendChild(row);
+      }
 
 }
 }
