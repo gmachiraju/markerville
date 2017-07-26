@@ -1,10 +1,10 @@
 {
-  "name": "MarkerVille",
+  "name": "Markerville",
   "version": "1.0.0",
   "description": "database",
   "main": "server.js",
   "engines": {
-    "node": "8x"
+    "node": "8.2.1"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -21,6 +21,6 @@
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brandon Sugarman",
+  "author": "Gautam Machiraju",
   "license": "MIT"
 }
