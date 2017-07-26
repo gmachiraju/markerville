@@ -4,7 +4,7 @@
   "description": "database",
   "main": "server.js",
   "engines": {
-    "node": "7x"
+    "node": "8x"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
