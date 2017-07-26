@@ -30,7 +30,7 @@ async function onLookupWord(req, res) {
    const routeParams = req.params;
    const word = routeParams.word;
 
-   const query =   { $or: [{markerName: word}, {diseaseType: word}, {biomarkerType: word}, {associatedDrug: word}, {medium: word}] };
+   const query =   { $or: [{markerName: word}, {biomarkerType: word}, {diseaseType: word}, {associatedDrug: word}, {medium: word}] };
 
    const results = await collection.find(query, function(err, cursor) {
      return cursor.toArray();
@@ -39,8 +39,8 @@ async function onLookupWord(req, res) {
    const formattedResults = results.map(function(result) {
      return {
        markerName: result.markerName,
-       diseaseType: result.diseaseType,
        biomarkerType: result.biomarkerType,
+       diseaseType: result.diseaseType,
        associatedDrug: result.associatedDrug,
        medium: result.medium
      }
