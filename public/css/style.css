@@ -1,110 +1,92 @@
-
-  .navBar {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 50px;
-
-  }
-
-  .inactive {
-    display: none !important;
-  }
-
-
-
-  .navBar .button {
-    overflow: auto;
-    cursor: pointer;
-    width:33%;
-    word-wrap: break-word;
-    text-align: center;
-    font-size: 125%;
-    border-right-style : solid;
-    border-right-width : 1px;
-    border-color: gray;
-    font-weight: lighter;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: gray;
-  }
-
-
-
-  .navBar .button:hover{
-    color: lightgray;
-    animation-duration: 1s;
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
 }
 
-    body {
-      margin: 0;
-    }
+.inactive {
+  display: none !important;
+}
 
+.navBar .button {
+  overflow: auto;
+  cursor: pointer;
+  width:33%;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 125%;
+  border-right-style : solid;
+  border-right-width : 1px;
+  border-color: gray;
+  font-weight: lighter;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: gray;
+}
 
+.navBar .button:hover {
+  color: lightgray;
+  animation-duration: 1s;
+}
 
-  #database, #aboutPage, #forum, #result{
+body {
+  margin: 0;
+}
 
-    padding-top: 50px;
-    min-height: 100vh;
-    opacity: 0.8;
-    background-image: url("../images/BIOTECH.jpg");
-    background-size: cover;
-    align-items: center;
+#database, #aboutPage, #forum, #result {
+  padding-top: 50px;
+  min-height: 100vh;
+  opacity: 0.8;
+  background-image: url("../images/BIOTECH.jpg");
+  background-size: cover;
+  align-items: center;
+}
 
-  }
-
-
-   @media (max-width: 700px){
-     article{
-       width 95%
-     }
-     header div span {
-       visibility:hidden;
-     }
+@media (max-width: 700px){
+   article{
+     width 95%
    }
-
-   @media (max-width: 500px) {
-    .choice-grid div {
-    width: 49%;
-    }
+   header div span {
+     visibility:hidden;
    }
+}
 
-
-  #result-table-cont, #forum-table-cont {
-    align-items: center;
-    text-align: center;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    color: white;
-    width: 100vw;
-
+@media (max-width: 500px) {
+  .choice-grid div {
+  width: 49%;
   }
+}
 
-  #result th{
-    border-bottom: 1px solid white;
-    color: white;
-    width: 25vw;
+#result-table-cont, #forum-table-cont {
+  align-items: center;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+  width: 100vw;
+}
 
-  }
-
+#result th {
+  border-bottom: 1px solid white;
+  color: white;
+  width: 25vw;
+}
 
 #forum th {
   width: 50vw;
-
   border-bottom: 1px solid white;
   color: white;
 }
 
-  #result td{
-    word-wrap: break-word;
-    width: 25vw;
-    color: white;
+#result td {
+  word-wrap: break-word;
+  width: 25vw;
+  color: white;
+}
 
-  }
-
-  #forum td {
-    width: 50vw;
-    color: white;
-  }
-
+#forum td {
+  width: 50vw;
+  color: white;
+}
 
 #message-post-cont{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -112,7 +94,6 @@
 }
 
 #message-post{
-
   text-align: center;
   color: gray;
   height: 70px;
@@ -125,94 +106,76 @@
 
 #forumForm{
   position: fixed;
-
 }
-
-
 
 #message-post:focus {
   opacity: 0.8;
-
 }
 
+#word-input {
+  text-align: center;
+  color: gray;
+  height: 70px;
+  margin-top: 3vh;
+  opacity: 0.3;
+  width: 40vw;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 27px;
+}
 
+#word-input:focus {
+  opacity: 0.8;
+}
 
-  #word-input {
-    text-align: center;
-    color: gray;
-    height: 70px;
-    margin-top: 3vh;
-    opacity: 0.3;
-    width: 40vw;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 27px;
+#aboutPage p{
+  /*word-wrap: break-word;*/
+  line-height: 30px;
+  /*position: absolute;*/
+  text-align: center;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1.6em;
+  margin: 0;
+  padding: 30px;
+}
 
-  }
+#database p {
+  padding: 30px;
+  /*position: absolute;*/
+  text-align: center;
+  /*margin-top: -30vh;*/
+  color: white;
+  max-height: 50vh;
+  font-size: 2em;
+  margin: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
-  #word-input:focus {
-    opacity: 0.8;
-  }
+.logo-cont {
+  text-align: left;
+}
 
+.logo {
+  /*position: absolute;*/
+  mix-blend-mode: multiply;
+  height: 160px;
+  width: 200px;
+}
 
+#searchForm {
+  /*padding-top: 30vh;*/
+  margin: 100px;
+  text-align: center;
+}
 
-    #aboutPage p{
+#aboutPage #gautam{
+  height: 125px;
+  width: 125px;
+  border: 2px solid white;
+  opacity: 0.7;
+}
 
-      /*word-wrap: break-word;*/
-      line-height: 30px;
-      /*position: absolute;*/
-      text-align: center;
-      color: white;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      font-size: 1.6em;
-      margin: 0;
-      padding: 30px;
-
-    }
-
-
-
-    #database p{
-      padding: 30px;
-
-      /*position: absolute;*/
-      text-align: center;
-      /*margin-top: -30vh;*/
-      color: white;
-      max-height: 50vh;
-      font-size: 2em;
-      margin: 0;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    }
-
-    .logo-cont {
-      text-align: left;
-    }
-
-
-
-      .logo {
-        /*position: absolute;*/
-
-        mix-blend-mode: multiply;
-        height: 160px;
-        width: 200px;
-
-      }
-
-      #searchForm {
-        /*padding-top: 30vh;*/
-        margin: 100px;
-        text-align: center;
-      }
-
-      #aboutPage #gautam{
-        height: 125px;
-        width: 125px;
-        border: 2px solid white;
-        opacity: 0.7;
-      }
-
-      #aboutPic{
-        padding-top: 30px;
-        text-align: center;
-      }
+#aboutPic{
+  padding-top: 30px;
+  text-align: center;
+}
